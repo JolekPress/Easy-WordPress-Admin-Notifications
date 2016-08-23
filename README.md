@@ -14,7 +14,9 @@ PHP 5.4+ for short array syntax
 
 It's recommended you use this as a [must use](https://codex.wordpress.org/Must_Use_Plugins) WordPress plugin. Simply download the file and place it into your wp-content/mu-plugins directory. It should exist here:
 
-```/wp-content/mu-plugins/johns-admin-notices.php```
+```
+/wp-content/mu-plugins/johns-admin-notices.php
+```
 
 WordPress will automatically load the file and you will then be able to use the functionality throughout your theme or plugin.
 
@@ -24,11 +26,11 @@ Or feel free to put this directly inside your theme or plugin and rename everyth
 
 There are 4 different methods you can use to add a notice. Here is some example usage:
 
-```
-    Johns_Admin_Notices::add_info('Example info');
-    Johns_Admin_Notices::add_error('Example error.');
-    Johns_Admin_Notices::add_success('Example success.');
-    Johns_Admin_Notices::add_warning('Example warning.');
+```php
+Johns_Admin_Notices::add_info('Example info');
+Johns_Admin_Notices::add_error('Example error.');
+Johns_Admin_Notices::add_success('Example success.');
+Johns_Admin_Notices::add_warning('Example warning.');
 ```
 
 This would result in the following output:
