@@ -1,4 +1,12 @@
 <?php
+/*
+Plugin Name: Easy WordPress Admin Notices
+Plugin URI: https://github.com/joleksow/Easy-WordPress-Admin-Notifications
+Description: Allows for easy setting and display of WordPress admin notices
+Version: 0.1.0
+Author: John Oleksowicz
+Author URI: http://johnoleksowicz.com
+*/
 
 /**
  * Class Johns_Admin_Notices
