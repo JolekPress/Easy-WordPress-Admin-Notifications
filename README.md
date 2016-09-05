@@ -24,18 +24,20 @@ Or feel free to put this directly inside your theme or plugin and rename everyth
 
 ## Usage
 
-There are 4 different methods you can use to add a notice. Here is some example usage:
+There are 4 different functions you can use to add a notice. Here is some example usage:
 
 ```php
-Johns_Admin_Notices::add_info('Example info');
-Johns_Admin_Notices::add_error('Example error.');
-Johns_Admin_Notices::add_success('Example success.');
-Johns_Admin_Notices::add_warning('Example warning.');
+add_action('admin_init', function() {
+    jp_notices_add_error('These messages');
+    jp_notices_add_info('are really');
+    jp_notices_add_success('easy to');
+    jp_notices_add_warning('create');
+});
 ```
 
-This would result in the following output:
+This would result in the following output on every page load of the dashboard:
 
-![Image showing output of above code in WordPress admin](http://johnoleksowicz.com/wp-content/uploads/2016/08/Screenshot-8_22_2016-7_06_11-PM.png)
+![Image showing output of above code in WordPress admin](http://imgur.com/dTDRFwX.png)
 
 ## Feedback
 
