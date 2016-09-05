@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Easy WordPress Admin Notices
-Plugin URI: https://github.com/joleksow/Easy-WordPress-Admin-Notifications
+Plugin URI: https://github.com/JolekPress/Easy-WordPress-Admin-Notifications
 Description: Allows for easy setting and display of WordPress admin notices
 Version: 0.1.0
 Author: John Oleksowicz
-Author URI: http://johnoleksowicz.com
+Author URI: http://jolekpress.com
 */
 
 /**
@@ -15,7 +15,7 @@ Author URI: http://johnoleksowicz.com
  *
  * @see https://codex.wordpress.org/Plugin_API/Action_Reference/admin_notices
  */
-class Johns_Admin_Notices
+class JP_Easy_Admin_Notices
 {
     const NOTICES_OPTION_KEY = 'johns_admin_notices';
 
@@ -128,4 +128,24 @@ class Johns_Admin_Notices
     }
 }
 
-Johns_Admin_Notices::init();
+JP_Easy_Admin_Notices::init();
+
+function jp_notices_add_success($message)
+{
+    JP_Easy_Admin_Notices::add_success($message);
+}
+
+function jp_notices_add_error($message)
+{
+    JP_Easy_Admin_Notices::add_error($message);
+}
+
+function jp_notices_add_warning($message)
+{
+    JP_Easy_Admin_Notices::add_warning($message);
+}
+
+function jp_notices_add_info($message)
+{
+    JP_Easy_Admin_Notices::add_info($message);
+}
