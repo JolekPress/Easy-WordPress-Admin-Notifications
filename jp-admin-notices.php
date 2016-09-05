@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Easy WordPress Admin Notices
+Plugin Name: JolekPress Easy Admin Notices
 Plugin URI: https://github.com/JolekPress/Easy-WordPress-Admin-Notifications
 Description: Allows for easy setting and display of WordPress admin notices
 Version: 0.1.0
@@ -9,7 +9,7 @@ Author URI: http://jolekpress.com
 */
 
 /**
- * Class Johns_Admin_Notices
+ * Class JP_Easy_Admin_Notices
  *
  * Handles setting and displaying dismissable admin notices.
  *
